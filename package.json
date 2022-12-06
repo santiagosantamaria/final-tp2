@@ -1,0 +1,38 @@
+{
+  "name": "ort-final-2022-12",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "mariadb": "^3.0.2",
+    "mocha": "^10.1.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0",
+    "supertest": "^6.3.2",
+    "tedious": "^15.1.2"
+  },
+  "description": "Vamos a simular un caso de la vida de real para desarrollar un servicio tipo API REST que servirá a una empresa cobradora de peajes. Las terminales de cobro de peaje ubicadas en algun punto geográfico, tienen un sistema computarizado que aplica el cobro de una tarifa a los vehículos que pasan por allí. Cada vez que un vehículo pasa por el lugar las cámaras detectan la patente del vehículo y con ello se busca en la base de datos. El operador (empleado) que se encuentra en la cabina hace el cobro en efectivo",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alezvi/ort-final-2022-12.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alezvi/ort-final-2022-12/issues"
+  },
+  "homepage": "https://github.com/alezvi/ort-final-2022-12#readme"
+}
