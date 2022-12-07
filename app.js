@@ -49,16 +49,14 @@ app.use(express.urlencoded({ extended: false }));
 
 const { Post } = require("./db/models/");
 
-app.get("/", (req, res) => {
-    res.json("hola");
-});
+// app.get("/", (req, res) => {
+//     res.json("hola");
+// });
 
 app.get("/posts", async (req, res) => {
     const posts = await Post.findAll();
 
-    res.json(posts);
+    res.status(200).json(posts);
 });
-
-app.get();
 
 app.listen(5555);
