@@ -9,6 +9,10 @@ module.exports = {
                 autoIncrement: true,
                 allowNull: false,
             },
+            number: {
+                type: DataTypes.INTEGER,
+                allowNull: false,
+            },
             province: {
                 type: Sequelize.STRING,
                 allowNull: false,

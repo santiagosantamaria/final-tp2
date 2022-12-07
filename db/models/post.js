@@ -14,6 +14,10 @@ module.exports = (sequelize, DataTypes) => {
                 autoIncrement: true,
                 allowNull: false,
             },
+            number: {
+                type: DataTypes.INTEGER,
+                allowNull: false,
+            },
             province: {
                 type: DataTypes.STRING,
                 allowNull: false,
