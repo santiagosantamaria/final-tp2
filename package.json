@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/alezvi/ort-final-2022-12/issues"
   },
-  "homepage": "https://github.com/alezvi/ort-final-2022-12#readme"
+  "homepage": "https://github.com/alezvi/ort-final-2022-12#readme",
+  "devDependencies": {
+    "sequelize-cli": "^6.5.2"
+  }
 }

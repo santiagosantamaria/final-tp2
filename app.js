@@ -39,6 +39,7 @@ app.use(express.urlencoded({ extended: false }));
 // Realizando ISSUE 1 - Peajes - Listar
 // Dificultad: 2/3
 // Contexto:
+
 // La empresa administradora de los puestos de cobro puede dar de alta la información de
 // los puestos de peaje. Tener en cuenta que cada cada cabina de peaje se ubica en una
 // dirección geográfica y tiene un numero. Por ejemplo, en la Ruta 3 hay 10 cabinas, cada
@@ -46,8 +47,15 @@ app.use(express.urlencoded({ extended: false }));
 
 // module.exports = app;
 
+const { Post } = require("./db/models/");
+
 app.get("/", (req, res) => {
     res.json("hola");
+});
+
+app.get("/posts", async (req, res) => {
+    const posts = await Post.findAll();
+    res.json(posts);
 });
 
 app.listen(5555);
