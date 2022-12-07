@@ -55,7 +55,10 @@ app.get("/", (req, res) => {
 
 app.get("/posts", async (req, res) => {
     const posts = await Post.findAll();
+
     res.json(posts);
 });
+
+app.get();
 
 app.listen(5555);
